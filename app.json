@@ -1,0 +1,14 @@
+{
+	"name": "Tipsy Blog Example",
+	"description": "A simple MySQL blog using Tipsy",
+	"website": "http://tipsy.la",
+	"repository": "https://github.com/arzynik/tipsy-example-blog",
+	"keywords": ["tipsy", "example", "blog"],
+	"addons": ["cleardb"],
+	"env": {
+		"ENV": "heroku",
+	},
+	"scripts": {
+		"postdeploy": "php install/install.php"
+	}
+}
