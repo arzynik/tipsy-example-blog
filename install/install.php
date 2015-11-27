@@ -3,4 +3,4 @@
 
 // create the database
 $url = parse_url(getenv('CLEARDB_DATABASE_URL'));
-passthru('mysql -u'.$url['user'].' -p'.$url['pass'].' -h'.$url['host'].' '.substr($url['path'], 1).' < install/db.sql.sql');
+passthru('mysql -u'.$url['user'].' -p'.$url['pass'].' -h'.$url['host'].' '.substr($url['path'], 1).' < install/db.sql');

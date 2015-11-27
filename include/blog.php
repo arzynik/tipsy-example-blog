@@ -24,9 +24,6 @@ $tipsy->router()
 	->home(function($View) {
 		$View->display('home');
 	})
-	->when('phpinfo', function($View) {
-		phpinfo();
-	})
 	->when('about', function($View) {
 		$View->display('about');
 	})
