@@ -5,6 +5,10 @@ require_once __DIR__ . '/../vendor/autoload.php';
 $tipsy = new Tipsy\Tipsy;
 $tipsy->config('../config/*.ini');
 
+if (getenv('CLEARDB_DATABASE_URL')) {
+	$tipsy->config(['db' => ['url' => getenv('CLEARDB_DATABASE_URL')]]);
+}
+
 $tipsy->service('Tipsy\Resource/Blog', [
 	permalink => function($permalink) {
 		return $this->q('select * from blog where permalink=?',$permalink);
