@@ -3,7 +3,9 @@
 
 // create the database
 $url = parse_url(getenv('CLEARDB_DATABASE_URL'));
+$sql = file_get_contents('install/db.sql');
 
-$out = shell_exec('mysql -u'.$url['user'].' -p'.$url['pass'].' -h'.$url['host'].' '.substr($url['path'], 1).' < install/db.sql 2>&1');
-
-error_log($out);
+$db = new \PDO('mysql:host='.$url['host'].($url['port'] ? ';port='.$url['port'] : '').';dbname='.substr($url['path'], 1).';charset=utf8', $url['user'], $url['pass'], $options);
+$db->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
+$db->setAttribute(\PDO::ATTR_EMULATE_PREPARES, false);
+$db->exec($sql);
