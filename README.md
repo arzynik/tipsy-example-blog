@@ -6,6 +6,8 @@ You will need MySQL and Apache/Nginx installed for this example.
 
 The **Procfile** contains what you need to switch between Apache or Nginx. Nginx is set by default.
 
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+
 
 #### Deploying on your own environment
 
