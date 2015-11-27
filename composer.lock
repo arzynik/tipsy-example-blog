@@ -13,12 +13,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/arzynik/Tipsy.git",
-                "reference": "fd35b61d6655b3c9192d691a63ef498c6210a27a"
+                "reference": "6dcd444750116fdb8c5332a48ee55e41557df8d8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/arzynik/Tipsy/zipball/fd35b61d6655b3c9192d691a63ef498c6210a27a",
-                "reference": "fd35b61d6655b3c9192d691a63ef498c6210a27a",
+                "url": "https://api.github.com/repos/arzynik/Tipsy/zipball/6dcd444750116fdb8c5332a48ee55e41557df8d8",
+                "reference": "6dcd444750116fdb8c5332a48ee55e41557df8d8",
                 "shasum": ""
             },
             "require": {
@@ -52,7 +52,7 @@
                 "mvw",
                 "php"
             ],
-            "time": "2015-11-17 22:36:02"
+            "time": "2015-11-27 18:57:03"
         }
     ],
     "packages-dev": [],
