@@ -6,7 +6,7 @@
 	"keywords": ["tipsy", "example", "blog"],
 	"addons": ["cleardb"],
 	"env": {
-		"ENV": "heroku",
+		"ENV": "heroku"
 	},
 	"scripts": {
 		"postdeploy": "php install/install.php"
