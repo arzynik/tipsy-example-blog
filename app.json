@@ -3,7 +3,8 @@
 	"description": "A simple MySQL blog using Tipsy",
 	"website": "http://tipsy.la",
 	"repository": "https://github.com/arzynik/tipsy-example-blog",
-	"keywords": ["tipsy", "example", "blog"],
+	"keywords": ["tipsy", "example", "blog", "mysql"],
+	"logo": "http://tipsy.la/images/cocktail.png",
 	"addons": ["cleardb"],
 	"env": {
 		"ENV": "heroku"
