@@ -3,10 +3,12 @@
 require_once __DIR__ . '/../vendor/autoload.php';
 
 $tipsy = new Tipsy\Tipsy;
-$tipsy->config('../config/*.ini');
+$tipsy->config('../config/config.ini');
 
 if (getenv('CLEARDB_DATABASE_URL')) {
 	$tipsy->config(['db' => ['url' => getenv('CLEARDB_DATABASE_URL')]]);
+} else {
+	$tipsy->config('../config/db.local.ini');
 }
 
 $tipsy->service('Tipsy\Resource/Blog', [
