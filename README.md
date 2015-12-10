@@ -21,4 +21,4 @@ You will need MySQL and Apache/Nginx installed.
 1. Open the **web** directory in your browser.
 
 
-See [Tipsy Documentation](https://github.com/arzynik/tipsy/wiki) for more information.
+See [Tipsy Documentation](https://github.com/tipsyphp/tipsy/wiki) for more information.
